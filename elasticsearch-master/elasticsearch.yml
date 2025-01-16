@@ -107,7 +107,7 @@ xpack.security.transport.ssl:
 # Create a new cluster with the current node only
 # Additional nodes can still join the cluster later
 # Essa configuração é usada apenas na primeira inicialização do cluster para definir quais nós são elegíveis para serem mestres (master-eligible nodes) durante a formação inicial do cluster.
-cluster.initial_master_nodes: ["node-master","node-data"]
+cluster.initial_master_nodes: ["node-master"]
 
 # Allow HTTP API connections from anywhere
 # Connections are encrypted and require user authentication
