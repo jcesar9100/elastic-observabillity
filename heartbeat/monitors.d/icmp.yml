@@ -1,0 +1,22 @@
+  - type: icmp
+  id: icmp-monitor
+  name: ICMP Monitor
+  schedule: '@every 30s'
+  hosts: ["https://www.elastic.co/docs", "www.youtube.com", "google.com"]
+  mode: any
+  timeout: 16s
+  wait: 1s
+  tags: ["network", "icmp"]
+  fields:
+    monitor_type: "network"
+
+  ipv4: true
+  ipv6: true
+  mode: any
+
+  # Total running time per ping test.
+  timeout: 16s
+
+  # Waiting duration until another ICMP Echo Request is emitted.
+  wait: 1s
+
